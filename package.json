@@ -1,6 +1,6 @@
 {
   "name": "nest-node",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A NodeJS client for Nest API",
   "main": "dist/index",
   "scripts": {

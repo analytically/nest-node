@@ -17,7 +17,8 @@ export default function token(code, callback) {
             callback(Error(res.body.error))
         }
         else {
-            callback(null, res.body)
+            // Nest API responds with JSON
+            callback(null, JSON.parse(res.body))
         }
     })
 }
