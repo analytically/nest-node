@@ -1,7 +1,7 @@
 import req from 'request'
 
 export default function read(token, callback) {
-    let uri = 'https://developer-api.nest.com'
+    let url = 'https://developer-api.nest.com'
     let json = true
     let headers = {
         'User-Agent':    'nest-node',
@@ -9,7 +9,7 @@ export default function read(token, callback) {
         'Accept':        'application/json'
     }
 
-    req.get({uri, json, headers}, (err, res)=> {
+    req.get({url, json, headers}, (err, res)=> {
         callback(err, res.body)
     })
 }

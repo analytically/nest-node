@@ -84,7 +84,7 @@ test('can set away', t=> {
         else {
             var structures = Object.keys(obj.structures)
             structures.forEach(function(structure) {
-                nest.away({token: process.env.TOKEN, structure: structure, away: "home"}, (err, obj)=> {
+                nest.away({token: process.env.TOKEN, structure_id: structure.id, away: "home"}, (err, obj)=> {
                     if (err) {
                         t.fail(err, err)
                     }

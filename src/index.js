@@ -9,7 +9,7 @@ let describe = `
     register((err, link)=>)
     token(code, (err, token)=>)
     read(token, (err, obj)=>)
-    away(token, structure, away, (err, obj)=>)
+    away(token, structure_id, away, (err, obj)=>)
 `
 
 export default {
