@@ -9,7 +9,7 @@ export default function read(token, callback) {
         'Accept':        'application/json'
     }
 
-    req.get({url, json, headers}, (err, res)=> {
+    req.get({url, json, headers, timeout: 60000}, (err, res)=> {
         callback(err, res.body)
     })
 }

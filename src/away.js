@@ -8,7 +8,7 @@ export default function write(params, callback) {
         'Content-Type': 'application/json'
     }
 
-    req.put({uri, headers, json: {"away": params.away}, followAllRedirects: true}, (err, res)=> {
+    req.put({uri, headers, json: {"away": params.away}, followAllRedirects: true, timeout: 60000}, (err, res)=> {
         callback(err, res.body)
     })
 }
