@@ -1,6 +1,6 @@
 import req from 'request'
 
-export default function write(params, callback) {
+export default function setTargetTempC(params, callback) {
     let uri = `https://developer-api.nest.com/devices/thermostats/${params.thermostat_id}?auth=${params.token}`
     let headers = {
         'User-Agent': 'nest-node',
