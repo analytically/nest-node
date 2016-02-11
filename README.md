@@ -25,6 +25,8 @@ Use a repl or the tests to exchange a register link callback code for a token wh
 ### Example
 
 ```javascript
+import nest from 'nest-node'
+
 let params = {
     token: "123",
     structure_id: "123",
