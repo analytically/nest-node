@@ -22,6 +22,25 @@ Use a repl or the tests to exchange a register link callback code for a token wh
 
     npm test
 
+### Example
+
+```javascript
+let params = {
+    token: "123",
+    structure_id: "123",
+    away: "away"
+}
+
+nest.setAway(params, (err, resp)=> {
+    if (err) {
+        // woops
+    }
+    else {
+        // yay!
+    }
+})
+```
+
 #### License
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
