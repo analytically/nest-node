@@ -1,4 +1,3 @@
-
 export default function register(callback) {
     let client_id = process.env.NEST_CLIENT_ID
 
