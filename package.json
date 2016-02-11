@@ -1,13 +1,26 @@
 {
   "name": "nest-node",
   "version": "0.0.9",
-  "description": "A NodeJS client for Nest API",
+  "description": "A NodeJS client for Nest(R) cloud API. The Nest cloud API is a near real-time data API, offering subscription-based access to data shared by Nest devices. We call that Nest Sense. With the Nest cloud API, you can build products that access Nest device data, and get the ability to read or write shared data values.",
   "main": "dist/index",
   "scripts": {
     "test": "./scripts/t test/nest-test",
     "prepublish": "babel src --out-dir dist"
   },
-  "author": "Mathias Bogaert",
+  "homepage": "https://github.com/analytically/nest-node",
+  "keywords": [
+    "nest",
+    "client",
+    "thermostat"
+  ],
+  "author": "Mathias Bogaert <mathias.bogaert@gmail.com> (http://twitter.com/analytically)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/analytically/nest-node"
+  },
+  "bugs": {
+    "url": "http://github.com/analytically/nest-node/issues"
+  },
   "devDependencies": {
     "babel-cli": "^6.4.5",
     "babel-preset-es2015": "^6.1.18",
@@ -16,8 +29,12 @@
     "tape": "^4.2.2"
   },
   "dependencies": {
-    "async": "^1.5.2",
     "lodash": "^3.10.1",
     "request": "^2.67.0"
-  }
+  },
+  "licenses": [{
+    "type": "Apache-2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  }],
+  "license": "Apache-2.0"
 }

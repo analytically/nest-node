@@ -1,4 +1,8 @@
-# NEST API NodeJS Client
+# NEST cloud API NodeJS Client
+
+A NodeJS client for Nest(R) cloud API. The Nest cloud API is a near real-time data API, offering subscription-based 
+access to data shared by Nest devices. We call that Nest Sense. With the Nest cloud API, you can build products that 
+access Nest device data, and get the ability to read or write shared data values.
 
 ### Dev Setup
 
